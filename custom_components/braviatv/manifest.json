@@ -1,0 +1,19 @@
+{
+  "domain": "braviatv",
+  "name": "Sony BRAVIA",
+  "after_dependencies": [],
+  "codeowners": [
+    "@schmittx"
+  ],
+  "config_flow": true,
+  "dependencies": [],
+  "documentation": "https://github.com/schmittx/home-assistant-braviatv",
+  "iot_class": "local_polling",
+  "issue_tracker": "https://github.com/schmittx/home-assistant-braviatv/issues",
+  "loggers": [
+    "bravia_tv"
+  ],
+  "quality_scale": "gold",
+  "requirements": [],
+  "version": "1.0.0"
+}

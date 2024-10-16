@@ -1,0 +1,7 @@
+{
+	"name": "Sony BRAVIA",
+	"content_in_root": false,
+	"homeassistant": "2023.9.0",
+	"iot_class": "Local Polling",
+	"render_readme": true
+}

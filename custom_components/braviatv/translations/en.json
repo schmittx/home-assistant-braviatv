@@ -1,0 +1,72 @@
+{
+    "title": "Sony BRAVIA",
+    "config": {
+        "step": {
+            "user": {
+                "data": {
+                    "host": "IP Address",
+                    "psk": "Pre-Shared Key",
+                    "ext_speaker": "External Speaker Connected",
+                    "time_format": "Time Format"
+                },
+                "description": "Connect to a Sony BRAVIA TV.",
+                "title": "Sony BRAVIA"
+            },
+            "source_list": {
+                "data": {
+                    "source_list": "Source List"
+                },
+                "description": "Select sources to be included in the source list.",
+                "title": "Sony BRAVIA"
+            },
+            "source_config": {
+                "data": {
+                    "name": "Source Name"
+                },
+                "description": "Overwrite the source name for: {source}, if desired.",
+                "title": "Sony BRAVIA"
+            }
+        },
+        "error": {
+            "no_connect": "Connection error, please check your host and PSK"
+        },
+        "abort": {
+            "already_configured": "The host is already configured."
+        }
+    },
+    "options": {
+        "step": {
+            "basic": {
+                "data": {
+                    "ext_speaker": "External Speaker Connected",
+                    "time_format": "Time Format"
+                },
+                "description": "Basic options.",
+                "title": "Sony BRAVIA"
+            },
+            "source_list": {
+                "data": {
+                    "source_list": "Source List"
+                },
+                "description": "Select sources to be included in the source list.",
+                "title": "Sony BRAVIA"
+            },
+            "source_config": {
+                "data": {
+                    "name": "Source Name"
+                },
+                "description": "Update the source name for: {source}, if desired.",
+                "title": "Sony BRAVIA"
+            },
+            "advanced": {
+                "data": {
+                    "save_responses": "Save server responses to custom_components/braviatv/client/responses",
+                    "scan_interval": "Polling interval (seconds)",
+                    "timeout": "Polling timeout (seconds)"
+                },
+                "description": "Server responses can be saved to a file for debugging and development support.\n\nPolling interval and timeout can be adjusted if errors are encountered.",
+                "title": "Advanced options"
+            }
+        }
+    }
+}
