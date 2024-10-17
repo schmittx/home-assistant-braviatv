@@ -7,15 +7,13 @@ from typing import Any
 import voluptuous as vol
 
 from homeassistant.components.media_player import (
-    DOMAIN as DOMAIN_MEDIA_PLAYER,
     MediaPlayerDeviceClass,
     MediaPlayerEntity,
 )
 from homeassistant.components.media_player.const import (
-    MEDIA_TYPE_APP,
-    MEDIA_TYPE_TVSHOW,
-    MEDIA_TYPE_VIDEO,
+    DOMAIN as DOMAIN_MEDIA_PLAYER,
     MediaPlayerEntityFeature,
+    MediaType,
 )
 from homeassistant.config_entries import ConfigEntry
 from homeassistant.const import (
@@ -171,9 +169,9 @@ class SonyBraviaTelevision(MediaPlayerEntity, SonyBraviaEntity):
         if self.conf_title:
             self._reset_app_info()
             if self.device.tv_input_active:
-                return MEDIA_TYPE_TVSHOW
-            return MEDIA_TYPE_VIDEO
-        return MEDIA_TYPE_APP
+                return MediaType.TVSHOW
+            return MediaType.VIDEO
+        return MediaType.APP
 
     @property
     def app_id(self) -> str | None:
